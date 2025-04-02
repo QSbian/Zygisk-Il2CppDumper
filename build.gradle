@@ -1,15 +1,5 @@
 apply plugin: 'idea'
 
-android {
-    compileSdkVersion 34 // 在此处设置编译 SDK 版本
-    buildToolsVersion "34.0.0"
-
-    defaultConfig {
-        minSdkVersion rootProject.ext.minSdkVersion
-        targetSdkVersion rootProject.ext.targetSdkVersion
-        // 其他配置（如版本号、应用 ID）
-    }
-}
 idea.module {
     excludeDirs += file('out')
     resourceDirs += file('template')
